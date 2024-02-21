@@ -1,0 +1,198 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Eric Baptista} \\ \vspace{1pt}
+    \small 301-848-3536 $|$ \href{mailto:x@x.com}{\underline{eric.macedob@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/eric-b-53936b89/}{\underline{linkedin.com/in/eric}} $|$
+    \href{https://github.com/b3ric}{\underline{github.com/b3ric}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Maryland, Baltimore County}{Baltimore, MD}
+      {B.S. Computer Science}{2014 -- 2018}
+    \resumeSubheading
+      {Instituto Federal Fluminense}{Rio de Janeiro, RJ}
+      {A.S. Electromechanics}{2012 -- 2014}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior Software Engineer (Platform)}{May 2022 -- Present}
+      {Bayer}{Washington DC}
+      \resumeItemListStart
+        \resumeItem{Secure Bayer's infrastructure by building authentication and authorization software using Go}
+        \resumeItem{Expand Bayer's Kubernetes APIs by writing CRDs, controllers, and operators using Go}
+        \resumeItem{Build and maintain highly scalable Kubernetes clusters used accross all of Bayer's Crop Science operations}
+        \resumeItem{Design and build multi-cloud solutions, leveraging AWS' EKS and GCP's GKE}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Software Engineer (Threat Hunting)}{May 2021 -- May 2022}
+      {Department of Homeland Security}{Arlington, VA}
+      \resumeItemListStart
+        \resumeItem{Build anti-malware software using Python and C to protect government infrastructure against private and nation-state hackers}
+        \resumeItem{Build highly scalable software to handle large amounts of data, levaraging tools such as Kubernetes, Docker, and RedHat OpenShift}
+        \resumeItem{Manual and tool-assisted analysis of threat indicators, looking for elements that are inconsistent or anomalous in large computer networks}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Software Engineer (Security)}{Sep 2019 -- May 2021}
+      {Maryland Department of Information Technology}{Baltimore, MD}
+      \resumeItemListStart
+        \resumeItem{Build anti-malware software in Python and Go to protect police and fire vehicles from data breaches}
+        \resumeItem{Write software to secure on premises infrastructure that handled dispatch center operations}
+        \resumeItem{Secure network of newly built "Plan B" dispatch center in case main building was jeopardized}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Software Engineer}{Oct 2017 -- Sep 2019}
+      {Inter-American Development Bank}{Washington DC}
+      \resumeItemListStart
+        \resumeItem{Build and maintain financial software used by the Bank's analysts using Python, Go, and R}
+        \resumeItem{Write libraries to detect financial anomalies across the Bank's donor accounts}
+        \resumeItem{Design and build Natural Language Processing software to tranform financial reports into valuable data for stakeholders}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Software Engineer}{Aug 2015 -- Oct 2017}
+      {World Health Organization}{Washington DC}
+      \resumeItemListStart
+        \resumeItem{Build WHO's software responsible for recoding mortality and morbidity data from ICD-9 to ICD-10 (International Classification of Diseases)}
+        \resumeItem{Write financial software to help monitor and track CDC-backed monetary contributions}
+        \resumeItem{Head of Data Operations for the Health in the Americas Publication, the organization's flagship publication for the Americas}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{Oct 2013 -- Aug 2015}
+      {Ibooking}{Rio de Janeiro, RJ}
+      \resumeItemListStart
+        \resumeItem{One of the first Engineers hired by this start up. Tasked with writing PHP enterprise software}
+        \resumeItem{Spearheaded efforts to transition from on-prem environment to AWS}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
